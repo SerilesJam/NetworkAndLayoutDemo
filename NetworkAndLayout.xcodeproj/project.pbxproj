@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73423FC5A4038C15F5876433 /* libPods-NetworkAndLayout.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E846188DBA7E460747E793D9 /* libPods-NetworkAndLayout.a */; };
 		EB1202731CE182E700D5EF3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1202721CE182E700D5EF3A /* main.m */; };
 		EB1202761CE182E700D5EF3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1202751CE182E700D5EF3A /* AppDelegate.m */; };
 		EB1202791CE182E700D5EF3A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1202781CE182E700D5EF3A /* ViewController.m */; };
 		EB12027C1CE182E700D5EF3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB12027A1CE182E700D5EF3A /* Main.storyboard */; };
 		EB12027E1CE182E700D5EF3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB12027D1CE182E700D5EF3A /* Assets.xcassets */; };
 		EB1202811CE182E700D5EF3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB12027F1CE182E700D5EF3A /* LaunchScreen.storyboard */; };
+		EBE64E111CE1856000E6287D /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE64E101CE1856000E6287D /* IndexViewController.swift */; };
+		EBE64E131CE1869000E6287D /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE64E121CE1869000E6287D /* ColorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B138BFBC49A6549038E2A0D /* Pods-NetworkAndLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkAndLayout.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkAndLayout/Pods-NetworkAndLayout.debug.xcconfig"; sourceTree = "<group>"; };
+		C59971C9BA043A2126B2AC58 /* Pods-NetworkAndLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkAndLayout.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkAndLayout/Pods-NetworkAndLayout.release.xcconfig"; sourceTree = "<group>"; };
+		E846188DBA7E460747E793D9 /* libPods-NetworkAndLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NetworkAndLayout.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB12026E1CE182E700D5EF3A /* NetworkAndLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkAndLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB1202721CE182E700D5EF3A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EB1202741CE182E700D5EF3A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +32,9 @@
 		EB12027D1CE182E700D5EF3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB1202801CE182E700D5EF3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB1202821CE182E700D5EF3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBE64E0F1CE1855F00E6287D /* NetworkAndLayout-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NetworkAndLayout-Bridging-Header.h"; sourceTree = "<group>"; };
+		EBE64E101CE1856000E6287D /* IndexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
+		EBE64E121CE1869000E6287D /* ColorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +42,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73423FC5A4038C15F5876433 /* libPods-NetworkAndLayout.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		879E3FD21CEBC39245599599 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E846188DBA7E460747E793D9 /* libPods-NetworkAndLayout.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D1D76A6EE513FD68CA2DBB9C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5B138BFBC49A6549038E2A0D /* Pods-NetworkAndLayout.debug.xcconfig */,
+				C59971C9BA043A2126B2AC58 /* Pods-NetworkAndLayout.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EB1202651CE182E700D5EF3A = {
 			isa = PBXGroup;
 			children = (
 				EB1202701CE182E700D5EF3A /* NetworkAndLayout */,
 				EB12026F1CE182E700D5EF3A /* Products */,
+				D1D76A6EE513FD68CA2DBB9C /* Pods */,
+				879E3FD21CEBC39245599599 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,11 +91,14 @@
 				EB1202751CE182E700D5EF3A /* AppDelegate.m */,
 				EB1202771CE182E700D5EF3A /* ViewController.h */,
 				EB1202781CE182E700D5EF3A /* ViewController.m */,
+				EBE64E101CE1856000E6287D /* IndexViewController.swift */,
+				EBE64E121CE1869000E6287D /* ColorView.swift */,
 				EB12027A1CE182E700D5EF3A /* Main.storyboard */,
 				EB12027D1CE182E700D5EF3A /* Assets.xcassets */,
 				EB12027F1CE182E700D5EF3A /* LaunchScreen.storyboard */,
 				EB1202821CE182E700D5EF3A /* Info.plist */,
 				EB1202711CE182E700D5EF3A /* Supporting Files */,
+				EBE64E0F1CE1855F00E6287D /* NetworkAndLayout-Bridging-Header.h */,
 			);
 			path = NetworkAndLayout;
 			sourceTree = "<group>";
@@ -86,9 +118,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB1202851CE182E700D5EF3A /* Build configuration list for PBXNativeTarget "NetworkAndLayout" */;
 			buildPhases = (
+				3E93E6CF562119D457474901 /* 📦 Check Pods Manifest.lock */,
 				EB12026A1CE182E700D5EF3A /* Sources */,
 				EB12026B1CE182E700D5EF3A /* Frameworks */,
 				EB12026C1CE182E700D5EF3A /* Resources */,
+				912A603E3155084FF6F2FC84 /* 📦 Embed Pods Frameworks */,
+				6E8EEEAF7C16FE0184A85104 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -144,6 +179,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3E93E6CF562119D457474901 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6E8EEEAF7C16FE0184A85104 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NetworkAndLayout/Pods-NetworkAndLayout-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		912A603E3155084FF6F2FC84 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NetworkAndLayout/Pods-NetworkAndLayout-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EB12026A1CE182E700D5EF3A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -152,6 +235,8 @@
 				EB1202791CE182E700D5EF3A /* ViewController.m in Sources */,
 				EB1202761CE182E700D5EF3A /* AppDelegate.m in Sources */,
 				EB1202731CE182E700D5EF3A /* main.m in Sources */,
+				EBE64E111CE1856000E6287D /* IndexViewController.swift in Sources */,
+				EBE64E131CE1869000E6287D /* ColorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,23 +346,34 @@
 		};
 		EB1202861CE182E700D5EF3A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B138BFBC49A6549038E2A0D /* Pods-NetworkAndLayout.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = NetworkAndLayout/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lapelgroup.NetworkAndLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NetworkAndLayout/NetworkAndLayout-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		EB1202871CE182E700D5EF3A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C59971C9BA043A2126B2AC58 /* Pods-NetworkAndLayout.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = NetworkAndLayout/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lapelgroup.NetworkAndLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NetworkAndLayout/NetworkAndLayout-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -300,6 +396,7 @@
 				EB1202871CE182E700D5EF3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
