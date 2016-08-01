@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D13ABA11D44E3E70002464E /* Routable.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D13ABA01D44E3E70002464E /* Routable.m */; };
+		0D13ABA41D44E5A90002464E /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D13ABA31D44E5A90002464E /* PageViewController.m */; };
+		0DA3BEB01D4FA7B100CA3E50 /* WSWaveEmitterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA3BEAF1D4FA7B100CA3E50 /* WSWaveEmitterView.m */; };
 		73423FC5A4038C15F5876433 /* libPods-NetworkAndLayout.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E846188DBA7E460747E793D9 /* libPods-NetworkAndLayout.a */; };
 		EB1202731CE182E700D5EF3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1202721CE182E700D5EF3A /* main.m */; };
 		EB1202761CE182E700D5EF3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1202751CE182E700D5EF3A /* AppDelegate.m */; };
@@ -19,6 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D13AB9F1D44E3E70002464E /* Routable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Routable.h; sourceTree = "<group>"; };
+		0D13ABA01D44E3E70002464E /* Routable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Routable.m; sourceTree = "<group>"; };
+		0D13ABA21D44E5A90002464E /* PageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageViewController.h; sourceTree = "<group>"; };
+		0D13ABA31D44E5A90002464E /* PageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageViewController.m; sourceTree = "<group>"; };
+		0DA3BEAE1D4FA7B100CA3E50 /* WSWaveEmitterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSWaveEmitterView.h; sourceTree = "<group>"; };
+		0DA3BEAF1D4FA7B100CA3E50 /* WSWaveEmitterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSWaveEmitterView.m; sourceTree = "<group>"; };
 		5B138BFBC49A6549038E2A0D /* Pods-NetworkAndLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkAndLayout.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkAndLayout/Pods-NetworkAndLayout.debug.xcconfig"; sourceTree = "<group>"; };
 		C59971C9BA043A2126B2AC58 /* Pods-NetworkAndLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkAndLayout.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkAndLayout/Pods-NetworkAndLayout.release.xcconfig"; sourceTree = "<group>"; };
 		E846188DBA7E460747E793D9 /* libPods-NetworkAndLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NetworkAndLayout.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +58,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D13AB9E1D44E3E70002464E /* Routable */ = {
+			isa = PBXGroup;
+			children = (
+				0D13AB9F1D44E3E70002464E /* Routable.h */,
+				0D13ABA01D44E3E70002464E /* Routable.m */,
+			);
+			path = Routable;
+			sourceTree = "<group>";
+		};
 		879E3FD21CEBC39245599599 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -87,10 +105,15 @@
 		EB1202701CE182E700D5EF3A /* NetworkAndLayout */ = {
 			isa = PBXGroup;
 			children = (
+				0D13AB9E1D44E3E70002464E /* Routable */,
 				EB1202741CE182E700D5EF3A /* AppDelegate.h */,
 				EB1202751CE182E700D5EF3A /* AppDelegate.m */,
 				EB1202771CE182E700D5EF3A /* ViewController.h */,
 				EB1202781CE182E700D5EF3A /* ViewController.m */,
+				0D13ABA21D44E5A90002464E /* PageViewController.h */,
+				0D13ABA31D44E5A90002464E /* PageViewController.m */,
+				0DA3BEAE1D4FA7B100CA3E50 /* WSWaveEmitterView.h */,
+				0DA3BEAF1D4FA7B100CA3E50 /* WSWaveEmitterView.m */,
 				EBE64E101CE1856000E6287D /* IndexViewController.swift */,
 				EBE64E121CE1869000E6287D /* ColorView.swift */,
 				EB12027A1CE182E700D5EF3A /* Main.storyboard */,
@@ -232,11 +255,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DA3BEB01D4FA7B100CA3E50 /* WSWaveEmitterView.m in Sources */,
 				EB1202791CE182E700D5EF3A /* ViewController.m in Sources */,
+				0D13ABA11D44E3E70002464E /* Routable.m in Sources */,
 				EB1202761CE182E700D5EF3A /* AppDelegate.m in Sources */,
 				EB1202731CE182E700D5EF3A /* main.m in Sources */,
 				EBE64E111CE1856000E6287D /* IndexViewController.swift in Sources */,
 				EBE64E131CE1869000E6287D /* ColorView.swift in Sources */,
+				0D13ABA41D44E5A90002464E /* PageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

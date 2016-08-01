@@ -1,26 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nFW-mQ-RQp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="eOz-xK-ETv">
-            <objects>
-                <navigationController id="nFW-mQ-RQp" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="prB-9b-aHw">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="2em-jq-NNy"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NV9-9u-Y4p" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-169.5" y="480.75"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -32,12 +16,109 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M4s-FT-9wM">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="7Lg-k2-90j"/>
+                                    <constraint firstAttribute="height" constant="30" id="pow-ky-sFI"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="7Lg-k2-90j"/>
+                                        <exclude reference="pow-ky-sFI"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="7Lg-k2-90j"/>
+                                        <include reference="pow-ky-sFI"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="onClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zpb-Bf-JkJ"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R0S-dx-mgw" customClass="WSWaveEmitterView">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="uGf-ib-LJk"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="uGf-ib-LJk"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="uGf-ib-LJk"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="R0S-dx-mgw" secondAttribute="trailing" id="J17-iN-Ja3"/>
+                            <constraint firstItem="M4s-FT-9wM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Jqr-D5-thz"/>
+                            <constraint firstItem="R0S-dx-mgw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="QEW-bC-eaL"/>
+                            <constraint firstItem="M4s-FT-9wM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S8w-VH-512"/>
+                            <constraint firstItem="R0S-dx-mgw" firstAttribute="bottom" secondItem="M4s-FT-9wM" secondAttribute="top" id="ve3-1b-OfM"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="M4s-FT-9wM"/>
+                                <exclude reference="R0S-dx-mgw"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="J17-iN-Ja3"/>
+                                <exclude reference="QEW-bC-eaL"/>
+                                <exclude reference="ve3-1b-OfM"/>
+                                <exclude reference="Jqr-D5-thz"/>
+                                <exclude reference="S8w-VH-512"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="M4s-FT-9wM"/>
+                                <include reference="R0S-dx-mgw"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="J17-iN-Ja3"/>
+                                <include reference="QEW-bC-eaL"/>
+                                <include reference="ve3-1b-OfM"/>
+                                <include reference="Jqr-D5-thz"/>
+                                <include reference="S8w-VH-512"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="xbP-3M-KtM"/>
+                    <connections>
+                        <outlet property="waveEmitterView" destination="R0S-dx-mgw" id="f0X-bE-bQX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="375" y="341.25"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="h2Z-61-zmr">
+            <objects>
+                <viewController storyboardIdentifier="page" id="BzJ-7k-mL4" customClass="PageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mnb-kp-vI2"/>
+                        <viewControllerLayoutGuide type="bottom" id="FQY-OK-oUc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Rj8-UW-7Kv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cr5-Qo-jDM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1267.5" y="341.25"/>
         </scene>
     </scenes>
 </document>

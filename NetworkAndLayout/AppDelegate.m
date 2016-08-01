@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "Routable.h"
+#import "ViewController.h"
+#import "PageViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +20,20 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    UINavigationController *nav = [[UINavigationController alloc] init];
+    
+    self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible];
+    
+    [[Routable sharedRouter] setNavigationController:nav];
+    [[Routable sharedRouter] map:@"root" toController:[ViewController class]];
+    [[Routable sharedRouter] map:@"page" toController:[PageViewController class]];
+    
+    [[Routable sharedRouter] open:@"root"];
+    
     return YES;
 }
 
